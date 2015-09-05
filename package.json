@@ -1,0 +1,30 @@
+{
+  "name": "remove-projects-in-divi",
+  "version": "1.0.0",
+  "description": "Remove the Projects Post Type in Divi by Elegant Themes.",
+  "license": "GPL-2.0+",
+  "repository": "https://github.com/vint3creative/remove-projects-in-divi.git",
+  "author": [
+    {
+      "name": "Vint3",
+      "email": "hello@vint3.com",
+      "homepage": "http://vint3.com"
+    },
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://s3rgiosan.com"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-composer": "^0.1.0",
+    "gulp-readme-to-markdown": "^0.1.1",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.0",
+    "require-dir": "^0.3.0"
+  },
+  "scripts": {
+    "jshint": "jshint --reporter node_modules/jshint-stylish/index.js gulpfile.js gulp/*"
+  }
+}
