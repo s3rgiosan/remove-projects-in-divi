@@ -1,0 +1,30 @@
+{
+  "name": "vint3/remove-projects-in-divi",
+  "description": "Remove the Projects Post Type in Divi by Elegant Themes.",
+  "type": "wordpress-plugin",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/vint3creative/remove-projects-in-divi.git",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Vint3",
+      "email": "hello@vint3.com",
+      "homepage": "http://vint3.com"
+    },
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://s3rgiosan.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vint3\\Divi\\Remove_Projects\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vint3\\Tests\\Divi\\Remove_Projects\\": "tests/"
+    }
+  }
+}
