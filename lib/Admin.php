@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The public-facing functionality of the plugin.
+ * The dashboard-specific functionality of the plugin.
  *
  * @link       http://vint3.com
  * @since      1.0.0
@@ -13,7 +13,7 @@
 namespace Vint3\Divi\Remove_Projects;
 
 /**
- * The public-facing functionality of the plugin.
+ * The dashboard-specific functionality of the plugin.
  *
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the dashboard-specific stylesheet and JavaScript.
@@ -22,7 +22,7 @@ namespace Vint3\Divi\Remove_Projects;
  * @subpackage Remove_Projects/lib
  * @author     Vint3 <hello@vint3.com>
  */
-class Frontend {
+class Admin {
 
 	/**
 	 * The plugin's instance.
@@ -44,11 +44,11 @@ class Frontend {
 	}
 
 	/**
-	 * Remove the Projects post type in Divi themes and child themes.
+	 * Remove Project post type.
 	 *
 	 * @since    1.0.0
 	 */
-	public function after_setup_theme() {
+	public function remove_post_type() {
 
 		if ( \wp_basename( \get_bloginfo( 'template_directory' ) ) === 'Divi' ) {
 			\remove_action( 'init', 'et_pb_register_posttypes', 0 );

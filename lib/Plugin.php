@@ -35,27 +35,27 @@ class Plugin {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      Divi_Remove_Projects_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @since     1.0.0
+	 * @access    protected
+	 * @var       Divi_Remove_Projects_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $pluginname    The string used to uniquely identify this plugin.
+	 * @since     1.0.0
+	 * @access    protected
+	 * @var       string    $pluginname    The string used to uniquely identify this plugin.
 	 */
 	protected $pluginname = 'remove-projects-in-divi';
 
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $version    The current version of the plugin.
+	 * @since     1.0.0
+	 * @access    protected
+	 * @var       string    $version    The current version of the plugin.
 	 */
 	protected $version = '1.0.0';
 
@@ -72,15 +72,17 @@ class Plugin {
 	}
 
 	/**
-	 * Register all of the hooks related to the public-facing functionality
+	 * Register all of the hooks related to the dashboard functionality
 	 * of the plugin.
 	 *
-	 * @since     1.0.0
+	 * @since     1.1.0    customize_register
+	 * @since     1.0.0    after_setup_theme
 	 * @access    private
 	 */
-	private function define_frontend_hooks() {
-		$plugin_frontend = new Frontend( $this );
-		$this->loader->add_action( 'after_setup_theme',  $plugin_frontend, 'after_setup_theme', 1 );
+	private function define_admin_hooks() {
+		$plugin_admin = new Admin( $this );
+		$this->loader->add_action( 'after_setup_theme',  $plugin_admin, 'remove_post_type', 1 );
+		$this->loader->add_action( 'customize_register', $plugin_admin, 'remove_sections', 20 );
 	}
 
 	/**
@@ -92,7 +94,7 @@ class Plugin {
 	 * @since    1.0.0
 	 */
 	public function run() {
-		$this->define_frontend_hooks();
+		$this->define_admin_hooks();
 		$this->loader->run();
 	}
 
