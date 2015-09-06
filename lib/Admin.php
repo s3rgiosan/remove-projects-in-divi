@@ -56,4 +56,17 @@ class Admin {
 
 	}
 
+	/**
+	 * Remove Portfolio sections.
+	 *
+	 * @since    1.1.0
+	 */
+	public function remove_sections() {
+		global $wp_customize;
+
+		$wp_customize->remove_section( 'et_pagebuilder_portfolio' );
+		$wp_customize->remove_section( 'et_pagebuilder_filterable_portfolio' );
+
+	}
+
 }
