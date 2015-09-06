@@ -35,6 +35,9 @@ This plugin removes the Project Post Type in [Divi](http://www.elegantthemes.com
 
 == Changelog ==
 
+= 1.1.0 =
+* Removed Portfolio sections.  
+
 = 1.0.0 =
 * Initial release.  
 
