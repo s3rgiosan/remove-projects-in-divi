@@ -50,9 +50,15 @@ class Admin {
 	 */
 	public function remove_post_type() {
 
-		if ( \wp_basename( \get_bloginfo( 'template_directory' ) ) === 'Divi' ) {
-			\remove_action( 'init', 'et_pb_register_posttypes', 0 );
+		$theme      = \wp_get_theme( \get_template() );
+		$theme_name = $theme->display( 'Name' );
+
+		if ( $theme_name !== 'Divi' ) {
+			return;
 		}
+
+		// Note: This only works for 2.4 and below
+		\remove_action( 'init', 'et_pb_register_posttypes', 0 );
 
 	}
 
