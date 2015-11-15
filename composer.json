@@ -19,12 +19,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Vint3\\Divi\\Remove_Projects\\": "lib/"
+      "Vint3\\Divi\\RemoveProjects\\": "lib/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Vint3\\Tests\\Divi\\Remove_Projects\\": "tests/"
+      "Vint3\\Tests\\Divi\\RemoveProjects\\": "tests/"
     }
   }
 }

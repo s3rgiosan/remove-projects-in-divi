@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Vint3\\Tests\\Divi\\Remove_Projects\\' => array($baseDir . '/tests'),
-    'Vint3\\Divi\\Remove_Projects\\' => array($baseDir . '/lib'),
+    'Vint3\\Tests\\Divi\\RemoveProjects\\' => array($baseDir . '/tests'),
+    'Vint3\\Divi\\RemoveProjects\\' => array($baseDir . '/lib'),
 );

@@ -7,10 +7,10 @@
  * @since      1.0.0
  *
  * @package    Divi
- * @subpackage Remove_Projects/lib
+ * @subpackage RemoveProjects/lib
  */
 
-namespace Vint3\Divi\Remove_Projects;
+namespace Vint3\Divi\RemoveProjects;
 
 /**
  * The dashboard-specific functionality of the plugin.
@@ -19,7 +19,7 @@ namespace Vint3\Divi\Remove_Projects;
  * enqueue the dashboard-specific stylesheet and JavaScript.
  *
  * @package    Divi
- * @subpackage Remove_Projects/lib
+ * @subpackage RemoveProjects/lib
  * @author     Vint3 <hello@vint3.com>
  */
 class Admin {

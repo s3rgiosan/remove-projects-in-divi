@@ -1,4 +1,4 @@
-=== Divi :: Remove Projects ===
+=== Remove Projects in Divi ===
 Contributors: s3rgiosan, vint3  
 Tags: divi, elegant themes, elegantthemes, project, projects  
 Requires at least: 4.0  
@@ -34,6 +34,10 @@ This plugin removes the Project Post Type in [Divi](http://www.elegantthemes.com
 4. Activate the plugin in the Plugin dashboard
 
 == Changelog ==
+
+= 1.1.1 =
+* Changed the plugin namespace.  
+* PHPDoc updated.  
 
 = 1.1.0 =
 * Removed Portfolio sections.  

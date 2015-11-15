@@ -31,7 +31,8 @@ dwsync.xml
 .komodotools
 
 # Package management
-composer.lock
+node_modules/
+vendor/
 
 # Folders to ignore
 .hg

@@ -10,10 +10,10 @@
  * @since      1.0.0
  *
  * @package    Divi
- * @subpackage Remove_Projects/lib
+ * @subpackage RemoveProjects/lib
  */
 
-namespace Vint3\Divi\Remove_Projects;
+namespace Vint3\Divi\RemoveProjects;
 
 /**
  * The core plugin class.
@@ -26,7 +26,7 @@ namespace Vint3\Divi\Remove_Projects;
  *
  * @since      1.0.0
  * @package    Divi
- * @subpackage Remove_Projects/lib
+ * @subpackage RemoveProjects/lib
  * @author     Vint3 <hello@vint3.com>
  */
 class Plugin {
@@ -37,7 +37,7 @@ class Plugin {
 	 *
 	 * @since     1.0.0
 	 * @access    protected
-	 * @var       Divi_Remove_Projects_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var       Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -57,7 +57,7 @@ class Plugin {
 	 * @access    protected
 	 * @var       string    $version    The current version of the plugin.
 	 */
-	protected $version = '1.1.0';
+	protected $version = '1.1.1';
 
 	/**
 	 * Define the core functionality of the plugin.
@@ -113,7 +113,7 @@ class Plugin {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Divi_Remove_Projects_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

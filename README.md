@@ -1,4 +1,4 @@
-# Divi :: Remove Projects #
+# Remove Projects in Divi #
 **Contributors:** s3rgiosan, vint3  
 **Tags:** divi, elegant themes, elegantthemes, project, projects  
 **Requires at least:** 4.0  

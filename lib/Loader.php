@@ -7,10 +7,10 @@
  * @since      1.0.0
  *
  * @package    Divi
- * @subpackage Remove_Projects/lib
+ * @subpackage RemoveProjects/lib
  */
 
-namespace Vint3\Divi\Remove_Projects;
+namespace Vint3\Divi\RemoveProjects;
 
 /**
  * Register all actions and filters for the plugin.
@@ -20,7 +20,7 @@ namespace Vint3\Divi\Remove_Projects;
  * run function to execute the list of actions and filters.
  *
  * @package    Divi
- * @subpackage Remove_Projects/lib
+ * @subpackage RemoveProjects/lib
  * @author     Vint3 <hello@vint3.com>
  */
 class Loader {
