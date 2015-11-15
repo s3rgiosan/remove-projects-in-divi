@@ -38,7 +38,7 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since    1.0.0
  */
-\add_action( 'plugins_loaded', function () {
+\add_action( 'plugins_loaded', function() {
     $plugin = new RemoveProjects\Plugin();
     $plugin->run();
 } );
@@ -48,12 +48,20 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since    1.2.0
  */
-$theme         = \wp_get_theme( \get_template() );
-$theme_name    = $theme->display( 'Name' );
-$theme_version = $theme->display( 'Version' );
+\add_action( 'plugins_loaded', function() {
 
-if ( $theme_name === 'Divi' && substr( $theme_version, 0, 3 ) === '2.5' ) {
-	function et_pb_register_posttypes() {
+	$theme         = \wp_get_theme( \get_template() );
+	$theme_name    = $theme->display( 'Name' );
+	$theme_version = $theme->display( 'Version' );
+
+	if ( $theme_name !== 'Divi' ) {
 		return;
 	}
-}
+
+	if ( substr( $theme_version, 0, 3 ) === '2.5' && ! function_exists( 'et_pb_register_posttypes' ) ) {
+		function et_pb_register_posttypes() {
+			return;
+		}
+	}
+
+} );

@@ -44,7 +44,7 @@ class Admin {
 	}
 
 	/**
-	 * Remove Project post type.
+	 * Remove Project post type for Divi 2.4.
 	 *
 	 * @since    1.0.0
 	 */
@@ -57,7 +57,6 @@ class Admin {
 			return;
 		}
 
-		// Note: This only works for 2.4 and below
 		\remove_action( 'init', 'et_pb_register_posttypes', 0 );
 
 	}
