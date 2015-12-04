@@ -2,7 +2,7 @@
 **Contributors:** s3rgiosan, vint3  
 **Tags:** divi, elegant themes, elegantthemes, project, projects  
 **Requires at least:** 4.0  
-**Tested up to:** 4.2.2  
+**Tested up to:** 4.3.1  
 **Stable tag:** trunk  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  

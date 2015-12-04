@@ -13,13 +13,15 @@
  * Plugin Name:       Remove Projects in Divi
  * Plugin URI:        https://github.com/vint3creative/remove-projects-in-divi
  * Description:       Remove the Project Post Type in Divi by Elegant Themes.
- * Version:           1.2.0
+ * Version:           1.2.1
  * Author:            Vint3
  * Author URI:        http://vint3.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       remove-projects-in-divi
  * Domain Path:       /languages
+ * GitHub Plugin URI: https://github.com/vint3creative/remove-projects-in-divi
+ * GitHub Branch:     master
  */
 
 if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {

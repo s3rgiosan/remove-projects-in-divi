@@ -1,5 +1,9 @@
 # Changelog #
 
+## 1.2.1 ##
+* Added GitHub Updater support.  
+* Added Update supported WordPress version.  
+
 ## 1.2.0 ##
 * Support to Divi 2.5.  
 
