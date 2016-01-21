@@ -26,5 +26,8 @@
     "psr-4": {
       "Vint3\\Tests\\Divi\\RemoveProjects\\": "tests/"
     }
+  },
+  "require-dev": {
+    "dangoodman/composer-for-wordpress": "^1.0"
   }
 }
