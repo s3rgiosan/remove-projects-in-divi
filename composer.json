@@ -17,6 +17,10 @@
       "homepage": "https://s3rgiosan.com"
     }
   ],
+  "support": {
+    "issues": "https://github.com/vint3creative/remove-projects-in-divi/issues",
+    "source": "https://github.com/vint3creative/remove-projects-in-divi"
+  },
   "autoload": {
     "psr-4": {
       "Vint3\\Divi\\RemoveProjects\\": "lib/"

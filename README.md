@@ -1,11 +1,11 @@
 # Remove Projects in Divi #
-**Contributors:** s3rgiosan, vint3  
-**Tags:** divi, elegant themes, elegantthemes, project, projects  
-**Requires at least:** 4.0  
-**Tested up to:** 4.3.1  
-**Stable tag:** trunk  
-**License:** GPLv2 or later  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+**Contributors:** s3rgiosan, vint3    
+**Tags:** divi, elegant themes, elegantthemes, project, projects    
+**Requires at least:** 4.0    
+**Tested up to:** 4.3.1    
+**Stable tag:** 1.2.3    
+**License:** GPLv2 or later    
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
 Remove the Project Post Type in Divi by Elegant Themes.
 
@@ -33,6 +33,31 @@ This plugin removes the Project Post Type in [Divi](http://www.elegantthemes.com
 3. Upload the `remove-projects-in-divi` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
+## Changelog ##
+
+### 1.2.3 ###
+* Minor changes.  
+* Added language file. 
+
+### 1.2.2 ###
+* Fix PSR-4 loader conflict with older implementation.  
+
+### 1.2.1 ###
+* Added GitHub Updater support.  
+* Added Update supported WordPress version.  
+
+### 1.2.0 ###
+* Support to Divi 2.5.  
+
+### 1.1.1 ###
+* Changed the plugin namespace.  
+* PHPDoc updated.  
+
+### 1.1.0 ###
+* Removed Portfolio sections.  
+
+### 1.0.0 ###
+* Initial release.  
 
 ## Upgrade Notice ##
 
