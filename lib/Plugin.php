@@ -52,13 +52,9 @@ class Plugin {
 	/**
 	 * Define the core functionality of the plugin.
 	 *
-	 * Create an instance of the loader which will be used to register the hooks
-	 * with WordPress.
-	 *
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		$this->loader = new Loader();
 	}
 
 	/**
@@ -77,8 +73,6 @@ class Plugin {
 	}
 
 	/**
-	 * Run the loader to execute all of the hooks with WordPress.
-	 *
 	 * Load the dependencies, define the locale, and set the hooks for the Dashboard and
 	 * the public-facing side of the site.
 	 *
