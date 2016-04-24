@@ -3,7 +3,7 @@
 **Tags:** divi, elegant themes, elegantthemes, project, projects    
 **Requires at least:** 4.0    
 **Tested up to:** 4.5    
-**Stable tag:** 1.3.0    
+**Stable tag:** 1.3.1    
 **License:** GPLv2 or later    
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
@@ -34,6 +34,9 @@ This plugin removes the Project Post Type in [Divi](http://www.elegantthemes.com
 4. Activate the plugin in the Plugin dashboard
 
 ## Changelog ##
+
+### 1.3.1 ###
+* Fix plugin header. 
 
 ### 1.3.0 ###
 * Support to Divi 2.7.
