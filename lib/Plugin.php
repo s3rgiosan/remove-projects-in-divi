@@ -32,16 +32,6 @@ namespace Vint3\Divi\RemoveProjects;
 class Plugin {
 
 	/**
-	 * The loader that's responsible for maintaining and registering all hooks that power
-	 * the plugin.
-	 *
-	 * @since     1.0.0
-	 * @access    protected
-	 * @var       Loader    $loader    Maintains and registers all hooks for the plugin.
-	 */
-	protected $loader;
-
-	/**
 	 * The unique identifier of this plugin.
 	 *
 	 * @since     1.0.0
@@ -57,7 +47,7 @@ class Plugin {
 	 * @access    protected
 	 * @var       string    $version    The current version of the plugin.
 	 */
-	protected $version = '1.2.3';
+	protected $version = '1.3.0';
 
 	/**
 	 * Define the core functionality of the plugin.
@@ -75,14 +65,15 @@ class Plugin {
 	 * Register all of the hooks related to the dashboard functionality
 	 * of the plugin.
 	 *
+	 * @since     1.3.0    Replaced after_setup_theme for init
 	 * @since     1.1.0    customize_register
 	 * @since     1.0.0    after_setup_theme
 	 * @access    private
 	 */
 	private function define_admin_hooks() {
-		$plugin_admin = new Admin( $this );
-		$this->loader->add_action( 'after_setup_theme',  $plugin_admin, 'remove_post_type', 1 );
-		$this->loader->add_action( 'customize_register', $plugin_admin, 'remove_sections', 20 );
+		$admin = new Admin( $this );
+		\add_action( 'init',               array( $admin, 'remove_post_type' ), 100 );
+		\add_action( 'customize_register', array( $admin, 'remove_sections' ), 20 );
 	}
 
 	/**
@@ -95,7 +86,6 @@ class Plugin {
 	 */
 	public function run() {
 		$this->define_admin_hooks();
-		$this->loader->run();
 	}
 
 	/**
@@ -107,16 +97,6 @@ class Plugin {
 	 */
 	public function get_plugin_name() {
 		return $this->pluginname;
-	}
-
-	/**
-	 * The reference to the class that orchestrates the hooks with the plugin.
-	 *
-	 * @since     1.0.0
-	 * @return    Loader    Orchestrates the hooks of the plugin.
-	 */
-	public function get_loader() {
-		return $this->loader;
 	}
 
 	/**

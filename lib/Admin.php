@@ -44,11 +44,14 @@ class Admin {
 	}
 
 	/**
-	 * Remove Project post type for Divi 2.4.
+	 * Remove Project post type.
 	 *
+	 * @since    1.3.0    Support Divi 2.6, 2.7
 	 * @since    1.0.0
 	 */
 	public function remove_post_type() {
+
+		global $wp_post_types;
 
 		$theme      = \wp_get_theme( \get_template() );
 		$theme_name = $theme->display( 'Name' );
@@ -57,7 +60,11 @@ class Admin {
 			return;
 		}
 
-		\remove_action( 'init', 'et_pb_register_posttypes', 0 );
+		if ( empty( $wp_post_types['project'] ) ) {
+			return;
+		}
+
+		unset( $wp_post_types['project'] );
 
 	}
 
@@ -68,10 +75,8 @@ class Admin {
 	 */
 	public function remove_sections() {
 		global $wp_customize;
-
 		$wp_customize->remove_section( 'et_pagebuilder_portfolio' );
 		$wp_customize->remove_section( 'et_pagebuilder_filterable_portfolio' );
-
 	}
 
 }
