@@ -8,7 +8,10 @@ module.exports = function (grunt) {
     pluginSlug:  'remove-projects-in-divi',
     mainFile:    'remove-projects-in-divi',
     textDomain:  'remove-projects-in-divi',
-    potFilename: 'remove-projects-in-divi'
+    potFilename: 'remove-projects-in-divi',
+    badges:      {
+      codacy: '[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b8a3607fa0c740fa8c93a9235918fd4e)](https://www.codacy.com/app/s3rgiosan/remove-projects-in-divi?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vint3creative/remove-projects-in-divi&amp;utm_campaign=Badge_Grade)',
+    },
   };
 
   var distFiles = [
@@ -33,7 +36,6 @@ module.exports = function (grunt) {
     '!tests/**',
   ];
 
-  // Project configuration
   grunt.initConfig({
 
     pkg: pkg,
@@ -112,9 +114,18 @@ module.exports = function (grunt) {
 
     wp_readme_to_markdown: {
       main: {
-          files: {
-            'README.md': 'README.txt'
+        files: {
+          'README.md': 'README.txt'
+        },
+        options: {
+          post_convert: function(readme) {
+            var badges = '';
+            Object.keys(config.badges).forEach(function(key) {
+              badges += config.badges[key] + "\n";
+            });
+            return badges + "\n" + readme;
           },
+        },
       },
     },
 
@@ -124,7 +135,6 @@ module.exports = function (grunt) {
       ]
     },
 
-    // Copy the plugin to build directory
     copy: {
       main: {
         expand: true,
@@ -158,10 +168,15 @@ module.exports = function (grunt) {
 
   });
 
-  // Load tasks
   require('load-grunt-tasks')(grunt);
 
-  // Register tasks
+  grunt.registerTask('default', [
+    'clean',
+    'composer:install',
+    'pot',
+    'readme',
+  ]);
+
   grunt.registerTask('readme', [
     'wp_readme_to_markdown',
   ]);
@@ -183,10 +198,10 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', [
     'pot',
-    'wp_readme_to_markdown',
+    'readme',
     'build',
     'wp_deploy',
+    'clean',
   ]);
 
-  grunt.util.linefeed = '\n';
 };
