@@ -1,11 +1,15 @@
+[![Latest Stable Version](https://poser.pugx.org/vint3/remove-projects-in-divi/v/stable)](https://packagist.org/packages/vint3/remove-projects-in-divi)
+[![Total Downloads](https://poser.pugx.org/vint3/remove-projects-in-divi/downloads)](https://packagist.org/packages/vint3/remove-projects-in-divi)
+[![License](https://poser.pugx.org/vint3/remove-projects-in-divi/license)](https://packagist.org/packages/vint3/remove-projects-in-divi)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b8a3607fa0c740fa8c93a9235918fd4e)](https://www.codacy.com/app/s3rgiosan/remove-projects-in-divi?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vint3creative/remove-projects-in-divi&amp;utm_campaign=Badge_Grade)
+[![Code Climate](https://codeclimate.com/github/vint3creative/remove-projects-in-divi/badges/gpa.svg)](https://codeclimate.com/github/vint3creative/remove-projects-in-divi)
 
 # Remove Projects in Divi #
 **Contributors:** [s3rgiosan](https://profiles.wordpress.org/s3rgiosan), [vint3](https://profiles.wordpress.org/vint3)  
 **Tags:** divi, elegant themes, elegantthemes, project, projects    
 **Requires at least:** 4.0    
 **Tested up to:** 4.6    
-**Stable tag:** 1.3.4    
+**Stable tag:** 1.3.5    
 **License:** GPLv2 or later    
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
@@ -15,27 +19,41 @@ Removes the Project Post Type in Divi.
 
 This plugin removes the Project Post Type in [Divi](http://www.elegantthemes.com/gallery/divi/).  
 
-[Bug report](https://github.com/vint3creative/remove-projects-in-divi/issues)  
-[Source](https://github.com/vint3creative/remove-projects-in-divi)  
-
 ## Installation ##
 
-### Uploading in WordPress Dashboard ###
+### Dashboard ###
 
-1. Navigate to the 'Add New' in the plugins dashboard
-2. Navigate to the 'Upload' area
-3. Select `remove-projects-in-divi.zip` from your computer
-4. Click 'Install Now'
-5. Activate the plugin in the Plugin dashboard
+1. Go to the 'Plugins' menu, and choose 'Add New'.
+2. Search for 'remove-projects-in-divi', and then click 'Install Now'.
+2. Click 'Activate'.
 
-### Using FTP ###
+### FTP ###
 
-1. Download `remove-projects-in-divi.zip`
-2. Extract the `remove-projects-in-divi` directory to your computer
-3. Upload the `remove-projects-in-divi` directory to the `/wp-content/plugins/` directory
-4. Activate the plugin in the Plugin dashboard
+1. Download and extract the .zip file.
+2. Upload the unzipped folder to the `/wp-content/plugins/` directory.
+3. Activate the plugin through the 'Plugins' menu.
+
+### Composer ###
+
+`composer require vint3/remove-projects-in-divi`
+
+## Frequently Asked Questions ##
+
+### Where can I report bugs? ###
+
+Bugs can be reported on the [GitHub repository](https://github.com/vint3creative/remove-projects-in-divi/issues).
+
+### How can I contribute? ###
+
+Join in on our [GitHub repository](https://github.com/vint3creative/remove-projects-in-divi) and read our [contribution](https://github.com/vint3creative/remove-projects-in-divi/blob/master/CONTRIBUTING.md) guidelines.
 
 ## Changelog ##
+
+### 1.3.5 ###
+* Added Code Climate integration.  
+* Added moar badges (yes I am a badge poser).
+* Added contribution guidelines.  
+* Updated README.  
 
 ### 1.3.4 ###
 * Added Codacy (a tool for automated code review) badge.  
