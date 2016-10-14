@@ -3,7 +3,7 @@ engines:
   phpcodesniffer:
     enabled: true
     config:
-      standard: WordPress-Extra
+      standard: "WordPress-Extra,phpcs.ruleset.xml"
   fixme:
     enabled: true
   duplication:
