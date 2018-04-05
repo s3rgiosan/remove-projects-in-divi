@@ -5,6 +5,15 @@
   "keywords": ["wordpress", "plugin"],
   "homepage": "https://github.com/vint3creative/remove-projects-in-divi.git",
   "license": "GPL-2.0+",
+  "require": {
+    "composer/installers": "~1.0",
+    "dg/composer-cleaner": "^1.1",
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*@stable",
+    "10up/wp_mock": "@dev"
+  },
   "authors": [
     {
       "name": "Vint3",
@@ -17,21 +26,18 @@
       "homepage": "https://s3rgiosan.com"
     }
   ],
-  "support": {
-    "issues": "https://github.com/vint3creative/remove-projects-in-divi/issues",
-    "source": "https://github.com/vint3creative/remove-projects-in-divi"
-  },
   "autoload": {
     "psr-4": {
-      "Vint3\\Divi\\RemoveProjects\\": "lib/"
+      "Vint3\\WP\\Plugin\\Divi\\RemoveProjects\\": "lib/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Vint3\\Tests\\Divi\\RemoveProjects\\": "tests/"
+      "Vint3\\WP\\Plugin\\Tests\\Divi\\RemoveProjects\\": "tests/"
     }
   },
-  "require-dev": {
-    "dangoodman/composer-for-wordpress": "^1.0"
+  "minimum-stability": "stable",
+  "config": {
+    "sort-packages": true
   }
 }

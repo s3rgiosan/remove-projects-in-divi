@@ -1,22 +1,12 @@
 <?php
-/**
- * The dashboard-specific functionality of the plugin.
- *
- * @link       http://vint3.com
- * @since      1.0.0
- *
- * @package    Divi
- * @subpackage RemoveProjects/lib
- */
 
-namespace Vint3\Divi\RemoveProjects;
+namespace Vint3\WP\Plugin\Divi\RemoveProjects;
 
 /**
- * The dashboard-specific functionality of the plugin.
+ * The dashboard-specific functionality of the plugin
  *
- * @package    Divi
- * @subpackage RemoveProjects/lib
- * @author     Vint3 <hello@vint3.com>
+ * @package Divi
+ * @since   1.0.0
  */
 class Admin {
 

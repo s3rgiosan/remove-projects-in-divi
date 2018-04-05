@@ -1,26 +1,18 @@
 <?php
-/**
- * The file that defines the core plugin class
- *
- * @link       http://vint3.com
- * @since      1.0.0
- *
- * @package    Divi
- * @subpackage RemoveProjects/lib
- */
 
-namespace Vint3\Divi\RemoveProjects;
+namespace Vint3\WP\Plugin\Divi\RemoveProjects;
 
 /**
  * The core plugin class.
  *
+ * This is used to define internationalization, dashboard-specific hooks, and
+ * public-facing site hooks.
+ *
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since      1.0.0
- * @package    Divi
- * @subpackage RemoveProjects/lib
- * @author     Vint3 <hello@vint3.com>
+ * @package Divi
+ * @since   1.0.0
  */
 class Plugin {
 
@@ -46,8 +38,8 @@ class Plugin {
 	 * Define the core functionality of the plugin.
 	 *
 	 * @since 1.0.0
-	 * @param string $name    Plugin name.
-	 * @param string $version Plugin version.
+	 * @param string $name    The plugin identifier.
+	 * @param string $version Current version of the plugin.
 	 */
 	public function __construct( $name, $version ) {
 		$this->name    = $name;
@@ -61,6 +53,7 @@ class Plugin {
 	 * @since 1.0.0
 	 */
 	public function run() {
+		$this->set_locale();
 		$this->define_admin_hooks();
 	}
 
@@ -83,6 +76,21 @@ class Plugin {
 	 */
 	public function get_version() {
 		return $this->version;
+	}
+
+	/**
+	 * Define the locale for this plugin for internationalization.
+	 *
+	 * Uses the I18n class in order to set the domain and to register the hook
+	 * with WordPress.
+	 *
+	 * @since  1.0.0
+	 * @access private
+	 */
+	private function set_locale() {
+		$i18n = new I18n();
+		$i18n->set_domain( $this->get_name() );
+		$i18n->load_plugin_textdomain();
 	}
 
 	/**
