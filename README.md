@@ -9,7 +9,7 @@
 **Tags:** divi, elegant themes, elegantthemes, project, projects  
 **Requires at least:** 4.0  
 **Tested up to:** 4.9.5  
-**Stable tag:** 1.3.6  
+**Stable tag:** 1.3.7  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -48,6 +48,9 @@ Bugs can be reported on the [GitHub repository](https://github.com/vint3creative
 Join in on our [GitHub repository](https://github.com/vint3creative/remove-projects-in-divi) and read our [contribution](https://github.com/vint3creative/remove-projects-in-divi/blob/master/CONTRIBUTING.md) guidelines.
 
 ## Changelog ##
+
+### 1.3.7 ###
+* Added missing dependencies.
 
 ### 1.3.6 ###
 * Updated "Tested up to tag".

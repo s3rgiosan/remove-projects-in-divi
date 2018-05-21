@@ -30,6 +30,6 @@ if ( ! defined( 'WPINC' ) ) {
  * @since 1.0.0
  */
 \add_action( 'plugins_loaded', function () {
-	$plugin = new Vint3\WP\Plugin\Divi\RemoveProjects\Plugin( 'remove-projects-in-divi', '1.3.6' );
+	$plugin = new Vint3\WP\Plugin\Divi\RemoveProjects\Plugin( 'remove-projects-in-divi', '1.3.7' );
 	$plugin->run();
 } );
