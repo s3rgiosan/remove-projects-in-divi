@@ -1,17 +1,17 @@
 === Remove Projects in Divi ===
 Contributors: s3rgiosan, vint3
 Tags: divi, elegant themes, elegantthemes, project, projects
-Requires at least: 4.0
+Requires at least: 4.8
 Tested up to: 4.9.5
-Stable tag: 1.3.7
+Stable tag: 1.3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Removes the Project post type in Divi.
+Removes the **Project** custom post type in the Divi theme.
 
 == Description ==
 
-This plugin Removes the Project post type in [Divi](http://www.elegantthemes.com/gallery/divi/) theme.
+This plugin removes the **Project** custom post type in the [Divi](http://www.elegantthemes.com/gallery/divi/) theme.
 
 == Installation ==
 
@@ -41,7 +41,16 @@ Bugs can be reported on the [GitHub repository](https://github.com/vint3creative
 
 Join in on our [GitHub repository](https://github.com/vint3creative/remove-projects-in-divi) and read our [contribution](https://github.com/vint3creative/remove-projects-in-divi/blob/master/CONTRIBUTING.md) guidelines.
 
+= Do you provide email support? =
+
+We DO NOT provide email support for this plugin. If you send us an email asking for support you'll be invited to:
+1. Post the question on the [GitHub repository](https://github.com/vint3creative/remove-projects-in-divi/issues)
+2. Or we can give you a quote on premium email support if you prefer to
+
 == Changelog ==
+
+= 1.3.8 =
+* Updated README.
 
 = 1.3.7 =
 * Added missing dependencies.
